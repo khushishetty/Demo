@@ -57,7 +57,7 @@ public class FileClass {
 				flag=false;
 			}
 		}catch(FileNotFoundException e) {
-			System.out.println("File not found!!");
+			System.out.println("File not found exception!!");
 		}
 		catch (Exception e) {
 			// TODO Auto-generated catch block
