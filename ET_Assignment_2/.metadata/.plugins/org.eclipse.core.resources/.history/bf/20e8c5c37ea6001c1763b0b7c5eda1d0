@@ -1,0 +1,46 @@
+package program_9;
+class DemoClass{
+    int x;
+    int y;
+    DemoClass(int x,int  y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+}
+public class Demo {
+	public static void main(String[] args) {
+		String ss1 = new String("hello");
+		String ss2 = new String("hello");
+		String ss3 = new String("xyz");
+		String ss4 = ss1;
+//		ss4="Khushi";
+		
+//		System.out.println(ss1);
+		System.out.println(ss1.equals(ss2));
+		//Compares only value
+		System.out.println(ss1==ss2);       //Compares memory and value
+//		
+//		System.out.println(ss1.equals(ss3));//Compares only value
+//		System.out.println(ss1==ss3);       //Compares memory and value
+//		
+//		System.out.println(ss1.equals(ss4));//Compares only value
+//		System.out.println(ss1==ss4);       //Compares memory and value
+//		
+//		System.out.println();
+//		DemoClass d1 = new DemoClass(10, 20);
+//		DemoClass d2 = new DemoClass(10, 20);
+//		DemoClass d3 = d1;
+//		
+//		//Compares location
+//		System.out.println(d1.equals(d2));
+//		System.out.println(d1==d2);  //Only address
+//		
+//		System.out.println();
+//		
+//		System.out.println(d1.equals(d3));
+//		System.out.println(d1==d3);
+		
+	}
+
+}

@@ -1,0 +1,69 @@
+package program_9;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+class Student implements Comparable<Student> {
+	int age;
+	int marks;
+	String name;
+
+	Student(int a, int m, String n) {
+		this.age = a;
+		this.marks = m;
+		this.name = n;
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return (this.marks - o.marks);
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.name + " " + this.age + " " + this.marks;
+	}
+
+}
+
+class StudentAgeComparator implements Comparator<Student> {
+	public int compare(Student s1, Student s2) {
+		System.out.println("Sorting by age");
+		return s1.age - s2.age;
+	}
+}
+
+class StudentMarksComparator implements Comparator<Student> {
+	public int compare(Student s1, Student s2) {
+		System.out.println("Sorting by marks");
+		return s1.marks - s2.marks;
+	}
+}
+
+public class Demo2 {
+	public static void main(String[] args) {
+		ArrayList<Student> s = new ArrayList<Student>();
+
+		s.add(new Student(21, 100, "Brian"));
+		s.add(new Student(22, 90, "Jenisha"));
+		s.add(new Student(18, 55, "Khushi"));
+		s.add(new Student(33, 89, "Raju"));
+		s.add(new Student(8, 22, "shilpa"));
+		
+//		 Collections.sort(s);
+		StudentAgeComparator ageComparator = new StudentAgeComparator();
+		Collections.sort(s, ageComparator);
+		
+		System.out.println(s);
+		
+		StudentMarksComparator marksComparator = new StudentMarksComparator();
+		Collections.sort(s, marksComparator);
+
+		System.out.println(s);
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package program_6;
+
+class FloristClass {
+	public int Florist(int people, int flowers, int[] cost) {
+		// {1,2,3,4,5}
+		// reverse the array
+		// for (int i = 0; i < cost.length / 2; i++) {
+		// int temp = cost[i];
+		// cost[i] = cost[cost.length - i - 1];
+		// cost[cost.length - i - 1] = temp;
+		// }
+		int i = cost.length - 1;
+		int maxCost = 0;
+		int count = 1;
+		while (i >= 0) {
+			for (int j = 0; j < 3; j++) {
+				maxCost += (cost[i] * count);
+				i--;
+				if(i==-1)
+					break;
+			}
+		}
+		return maxCost;
+	}
+}
+
+public class Program_6 {
+	public static void main(String[] args) {
+		int[] cost = { 1, 4, 6, 7, 9 };
+		System.out.println(new FloristClass().Florist(3, 5, cost));
+
+	}
+
+}

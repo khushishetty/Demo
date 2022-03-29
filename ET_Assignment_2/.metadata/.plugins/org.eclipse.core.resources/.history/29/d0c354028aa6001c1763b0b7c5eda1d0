@@ -1,0 +1,35 @@
+
+class Employee{
+	private static String company = "ACI";
+	private String empID;
+	
+	public Employee() {
+		empID = null;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		Employee.company = company;
+	}
+
+	public String getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+	
+}
+
+public class HrSystemClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package program_9;
+
+public class Demo {
+	public static void main(String[] args) {
+		String ss1 = new String("Khushi");
+		String ss2 = new String("Khushi");
+		System.out.println(ss1.equals(ss2));
+	}
+
+}

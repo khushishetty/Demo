@@ -1,0 +1,15 @@
+package program_3;
+
+class RandsomClass{
+	public void randsom(String magazine, String note){
+		
+	}
+}
+public class Program_3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

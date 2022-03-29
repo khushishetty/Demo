@@ -1,0 +1,106 @@
+
+abstract class Employee {
+	private static String company = "ACI";
+	private String empID;
+	private String name;
+	private double salary;
+
+	public Employee() {
+		empID = null;
+		name = null;
+		salary = 0;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		Employee.company = company;
+	}
+
+	public String getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	// abstract classes
+	public abstract void employeeType();
+
+	public void setDetails() {
+		
+	}
+	public void getDetails() {
+		
+	};
+
+}
+
+class SrManager extends Employee{
+	
+	@Override
+	public void employeeType() {
+		// TODO Auto-generated method stub
+		System.out.println("Senior manager!");
+		
+	}
+
+	
+}
+class Manager extends Employee{
+
+	//composition
+	private SrManager supervisor;
+	
+	public Manager() {
+		supervisor=null;
+	}
+	
+	
+	public SrManager getSupervisor() {
+		return supervisor;
+	}
+
+
+	public void setSupervisor(SrManager supervisor) {
+		this.supervisor = supervisor;
+	}
+
+
+	@Override
+	public void employeeType() {
+		System.out.println("Manager!");
+		
+	} 
+	
+}
+
+
+
+public class HrSystemClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

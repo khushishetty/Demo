@@ -1,0 +1,22 @@
+package program_9;
+
+class Test {
+	public void hello() {
+		System.out.println("Hi");
+	}
+
+}
+
+class Test2 {
+	public void hello() {
+		System.out.println("Hi");
+	}
+}
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

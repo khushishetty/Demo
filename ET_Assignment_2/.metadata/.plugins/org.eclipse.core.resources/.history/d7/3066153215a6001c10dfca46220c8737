@@ -1,0 +1,32 @@
+package program_8;
+
+class StockMarketClass {
+	public void maxProfit(int[] arr)
+	{
+		int maxprofit=-1;
+		for(int i=0; i<arr.length-1; i++)
+		{
+			int maxEle=arr[i];
+			int j;
+			for(j=i;j<arr.length; j++)
+			{
+				if(arr[j]>maxEle)
+					maxEle=arr[j];
+			}
+			
+			if((maxEle-arr[i]) > maxprofit)
+				maxprofit=maxEle-arr[i];
+				
+		}
+		System.out.println(maxprofit);
+	}
+}
+
+public class Program_8 {
+	public static void main(String[] args) {
+		int[] arr = {7,1,5,3,6,4};
+		new StockMarketClass().maxProfit(arr);
+
+	}
+
+}

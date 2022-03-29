@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="program_1.BinaryGapClass"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="program_2.ConverterClass"/>
+<fullyQualifiedTypeName name="program_6.FloristClass"/>
+<fullyQualifiedTypeName name="program_8.StockMarketClass"/>
+<fullyQualifiedTypeName name="program_6.RotatedClass"/>
+<fullyQualifiedTypeName name="program_7.DemoClass"/>
+<fullyQualifiedTypeName name="program_3.RandsomClass"/>
+<fullyQualifiedTypeName name="java.util.regex.MatchResult"/>
+<fullyQualifiedTypeName name="program_4.MatrixClass"/>
+<fullyQualifiedTypeName name="program_5.MatrixClass"/>
+<fullyQualifiedTypeName name="program_9.DemoClass"/>
+<fullyQualifiedTypeName name="Privilage"/>
+<fullyQualifiedTypeName name="BasicPrivilage"/>
+<fullyQualifiedTypeName name="AdvPrivilage"/>
+<fullyQualifiedTypeName name="Employee"/>
+<fullyQualifiedTypeName name="SrManager"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.TreeMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="program_9.Student"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="program_9.StudentAgeComparator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="program_9.MissingFieldException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+</qualifiedTypeNameHistroy>

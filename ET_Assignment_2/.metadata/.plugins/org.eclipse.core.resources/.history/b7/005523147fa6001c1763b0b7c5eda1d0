@@ -1,0 +1,17 @@
+package program_9;
+class Test{
+    int x=10;
+ 
+    Test(int x)
+    {
+        this.x = x;
+ 
+    }
+}
+public class Demo {
+	public static void main(String[] args) {
+		
+		
+	}
+
+}
