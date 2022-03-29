@@ -1,0 +1,46 @@
+package program_1;
+class Emp{
+	private double salary;
+	private String empID;
+
+	public Emp()
+	{
+		this.salary=0;
+		this.empID=null;
+		
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public String getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+	
+	
+}
+public class Program_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Emp e1 = new Emp(20000, "E_1");
+		Emp e2 = new Emp(10000, "E_2");
+		Emp e3 = new Emp(22000, "E_3");
+		Emp e4 = new Emp(11000, "E_4");
+		Emp e5 = new Emp(33000, "E_5");
+		
+		
+		
+
+	}
+
+}

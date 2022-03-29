@@ -1,0 +1,15 @@
+package program13;
+
+public class Program13 {
+
+	static void fibonacci(int n)
+	{
+		int[] 
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

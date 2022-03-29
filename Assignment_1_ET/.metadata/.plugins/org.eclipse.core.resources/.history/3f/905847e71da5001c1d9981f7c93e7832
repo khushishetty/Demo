@@ -1,0 +1,29 @@
+package program_1;
+class PatternClass{
+	public String firstRepeatedPattern(String str) {
+		
+//		ABCDABC
+//		i   j
+		int i;
+		for(i=0; i<str.length(); i++)
+		{
+			int patternFound = str.indexOf(str.charAt(i), i+1);
+			if(patternFound == -1)
+				continue;
+			int j=patternFound;
+			while(str.charAt(i)==str.charAt(j) && j<str.length()-1)
+				j++;
+			return(str.substring(patternFound, j+1));
+		}
+		return null;
+		
+		
+	}
+}
+public class Program_4 {
+	public static void main(String[] args) {
+		PatternClass pc = new PatternClass();
+		System.out.println(pc.firstRepeatedPattern("ABCDED"));
+	}
+
+}

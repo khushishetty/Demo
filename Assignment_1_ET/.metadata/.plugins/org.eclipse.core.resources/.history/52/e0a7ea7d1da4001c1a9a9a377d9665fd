@@ -1,0 +1,39 @@
+package program7;
+
+class StrongNumbers{
+	
+	public int factorial(int n)
+	{
+		int res=1;
+		while(n!=0)
+		{
+			res*=n;
+			n--;
+		}
+		return res;
+	}
+	public void isStrongNo(int num)
+	{
+		int digit;
+		int sum=0;
+		int orgNum=num;
+		while(num!=0) {
+			digit = num%10;
+			num=num/10;
+			sum+=factorial(num);
+		}
+		if(sum==orgNum)
+		{
+			System.out.println("Is Strong Number!");
+		}
+		else {
+			System.out.println("Is not strong number!");
+		}
+	}
+}
+public class Program7 {
+	
+	public static void main(String[] args) {
+
+	}
+}

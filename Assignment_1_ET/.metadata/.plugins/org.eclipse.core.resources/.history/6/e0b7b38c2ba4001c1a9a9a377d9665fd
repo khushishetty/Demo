@@ -1,0 +1,38 @@
+package program5;
+
+public class Program5 {
+
+	static void display(int[] arr) {
+		for (int i = 0; i < arr.length; i++)
+			System.out.print(arr[i]);
+	}
+
+	static void VanecqSeq(int n) {
+
+		int[] vanecq = new int[n];
+		vanecq[0] = 0;
+		for (int i = 2; i <= n; i++) {
+			int ele = vanecq[i - 1];
+			int j = i - 2;
+			while (j >= 0) {
+				if (vanecq[j] == ele)
+					break;
+				j--;
+			}
+			if (j == -1)
+				vanecq[i - 1] = 0;
+			else
+				vanecq[i - 1] = j - i - 1;
+		}
+
+		display(vanecq);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		VanecqSeq(10);
+
+	}
+
+}

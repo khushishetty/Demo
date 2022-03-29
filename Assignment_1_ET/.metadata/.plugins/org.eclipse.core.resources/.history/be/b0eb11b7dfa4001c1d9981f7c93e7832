@@ -1,0 +1,26 @@
+package program6;
+
+import java.util.Scanner;
+
+class Josephus {
+	int n;
+
+	public Josephus(int n) {
+		this.n=n;
+	}
+}
+
+public class Program6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		System.out.println("Enter the value of n : ");
+		Scanner ip=new Scanner(System.in);
+		
+		n=ip.nextInt();
+		
+		
+	}
+
+}

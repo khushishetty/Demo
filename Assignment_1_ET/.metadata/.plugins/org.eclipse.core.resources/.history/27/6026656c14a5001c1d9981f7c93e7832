@@ -1,0 +1,59 @@
+package program_1;
+class Emp{
+	private int salary;
+	private String empID;
+
+	public Emp()
+	{
+		this.salary=0;
+		this.empID=null;
+		
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public String getEmpID() {
+		return empID;
+	}
+
+	public void setEmpID(String empID) {
+		this.empID = empID;
+	}
+	
+	
+}
+public class Program_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Emp employee1 = new Emp();
+		employee1.setEmpID("E_1");
+		employee1.setSalary(10000);
+		
+		Emp employee2 = new Emp();
+		employee2.setEmpID("E_1");
+		employee2.setSalary(10000);
+		
+		Emp[] e = new Emp[10];
+		
+		for(int i=0; i<e.length; i++)
+		{
+			e[i].getEmpID();
+			e[i].getSalary();
+		}
+		System.out.println(employee1.toString());
+		
+		
+		
+		
+		
+
+	}
+
+}

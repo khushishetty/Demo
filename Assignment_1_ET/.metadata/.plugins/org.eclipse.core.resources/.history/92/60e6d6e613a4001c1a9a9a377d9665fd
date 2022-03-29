@@ -1,0 +1,23 @@
+package program1;
+
+import java.util.Scanner;
+
+public class Program1 {
+	
+	
+	static void chocolates()
+	{
+		int m, n;
+		Scanner ip = new Scanner(System.in);
+		
+		System.out.print("Enter the number of chocolates (N) : ");
+		n = ip.nextInt();
+		
+		System.out.print("Enter m : ");
+		m = ip.nextInt();
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

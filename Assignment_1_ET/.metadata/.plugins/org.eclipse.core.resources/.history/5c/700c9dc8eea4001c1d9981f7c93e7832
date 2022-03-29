@@ -1,0 +1,51 @@
+
+class Reckamann {
+	public boolean isVisited(int ele, int[] rec)
+	{
+		for(int i=0; i<rec.length; i++)
+		{
+			if(rec[i]==ele)
+				return true;
+		}
+		return false;
+	}
+	public void solveReckamann(int n) {
+		int i=0;
+		int[] rec = new int[n];
+		int j=1;
+		rec[0]=0;
+		int hops=1;
+		while(j<n)
+		{
+			int backHopEle = i-hops;
+			if(backHopEle <=-1 || isVisited(backHopEle, rec))//move forward
+			{
+				i = i+hops;
+				hops++;
+				rec[j]=i;
+				j++;
+			}
+			else {//move backwards
+				
+			}
+				
+		}
+		
+//		hops=1
+//		0 1 2 3 4 5 
+//		i
+		
+//		0 
+//		0 1 2 3 ..
+//		  j
+	}
+}
+
+public class Program14 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

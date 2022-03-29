@@ -1,0 +1,14 @@
+package program_1;
+
+class StringClass{
+	
+}
+public class program_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package program1;
+
+import java.util.Scanner;
+
+public class Program1 {
+	
+	
+	static void chocolates()
+	{
+		int m, n;
+		Scanner ip = new Scanner(System.in);
+		
+		System.out.print("Enter the number of chocolates (N) : ");
+		n = ip.nextInt();
+		
+		System.out.print("Enter m : ");
+		m = ip.nextInt();
+		
+		
+		int[] chocolate = new int[n];
+		for(int i=0; i<n; i++)
+			chocolate[i]=0;
+		
+		
+		int j=0, count=0;
+		do {
+			chocolate[j] = -1;
+			j = (j+m)/n;
+			count++;
+		}while(chocolate[j]!=-1);
+		
+		System.out.println(count);
+		//1 0 1 0 1 0 1 0 1 0 
+		//0 1 2 3 4 5 6 7 8 9
+			
+	}
+	public static void main(String[] args) {
+		chocolates();
+	}
+
+}
