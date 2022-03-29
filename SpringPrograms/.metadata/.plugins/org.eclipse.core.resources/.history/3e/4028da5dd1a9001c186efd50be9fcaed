@@ -1,0 +1,12 @@
+package aciWorld;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HelloWorldConfig {
+	public HelloWorld helloWorld()
+	{
+		return new HelloWorld();
+	}
+
+}
